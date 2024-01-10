@@ -20,5 +20,6 @@ Stylex version in packages will be updated so if you want a historical reference
 ### Stylex 0.4.1
 
 * External dependencies _can_ bundle css, but stylex works best when consumers build the css. ESM is not currently supported, [this diff](https://github.com/facebook/stylex/commit/059c800db038310ac52bbdb333ea220cd18010c5) _might_ fix that (or maybe some BABEL_ENV stuff).
+* Dependencies using stylex also need to be included in NextJS transpile modules (possibly for the babel interop stuff).
 * A custom babel config is required to enable the stylex plugin which disables SWC as a compiler for Next. This, in turn, invalidates _some_ NextJS packages (next/font, probably server actions, probably more). [This diff](https://github.com/facebook/stylex/issues/297) will likely fix this. 
 * Repo contains a babel config for `stylex-component-export` but this is unnecessary. It is kept as we want to test building css for each package alongside exporting the JS only (consumer builds css).

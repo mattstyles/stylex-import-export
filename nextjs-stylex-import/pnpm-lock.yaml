@@ -18,8 +18,8 @@ dependencies:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
   stylex-component-export:
-    specifier: ^0.0.1
-    version: 0.0.1(react@18.2.0)
+    specifier: ^0.0.2
+    version: 0.0.2(react@18.2.0)
 
 devDependencies:
   '@stylexjs/babel-plugin':
@@ -2737,8 +2737,8 @@ packages:
   /styleq@0.1.3:
     resolution: {integrity: sha512-3ZUifmCDCQanjeej1f6kyl/BeP/Vae5EYkQ9iJfUm/QwZvlgnZzyflqAsAWYURdtea8Vkvswu2GrC57h3qffcA==}
 
-  /stylex-component-export@0.0.1(react@18.2.0):
-    resolution: {integrity: sha512-d5360FiKHtZad1m2k0f3PLvaj4rQ5WyBs3L1CYoP34fdXhlGEPrgBdpwB4nDn1FSuyC3Uy6Ln2mu4O39AZ2AgA==}
+  /stylex-component-export@0.0.2(react@18.2.0):
+    resolution: {integrity: sha512-lm/kXOwSZsHsoh4zvsFJtFHaa0LkNkIYedq/kQf5AhteLia1903GBd34oI8dY76nTXtXB89t3Al+7UGMYfcGLQ==}
     peerDependencies:
       react: ^18.2.0
     dependencies:
