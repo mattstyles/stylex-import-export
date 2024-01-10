@@ -1,4 +1,3 @@
-
 import path from 'node:path'
 import {fileURLToPath} from 'node:url'
 
@@ -10,9 +9,7 @@ const __dirname = path.dirname(__filename)
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: [
-    'stylex-component-export'
-  ],
+  transpilePackages: ['stylex-component-export'],
   webpack(config) {
     config.resolve.extensionAlias = {
       '.js': ['.js', '.ts'],
@@ -22,8 +19,6 @@ const nextConfig = {
   },
 }
 
-
-
 export default stylexPlugin({
   rootDir: __dirname,
-})(nextConfig);
+})(nextConfig)

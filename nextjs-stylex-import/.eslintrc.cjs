@@ -1,7 +1,7 @@
 module.exports = {
-  extends: 'next/core-web-vitals',
-  plugins: ["@stylexjs"],
+  extends: ['next/babel', 'next/core-web-vitals'],
+  plugins: ['@stylexjs'],
   rules: {
-    "@stylexjs/valid-styles": ["error", {...options}],
+    '@stylexjs/valid-styles': ['error'],
   },
-};
+}
