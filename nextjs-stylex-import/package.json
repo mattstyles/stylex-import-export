@@ -15,7 +15,7 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "stylex-component-export": "^0.0.1"
+    "stylex-component-export": "^0.0.2"
   },
   "devDependencies": {
     "@stylexjs/babel-plugin": "^0.4.1",

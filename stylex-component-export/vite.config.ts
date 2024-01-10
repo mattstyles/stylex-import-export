@@ -1,5 +1,6 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react-swc'
+import preserveDirectives from 'rollup-plugin-preserve-directives'
 import dts from 'vite-plugin-dts'
 import pkg from './package.json'
 
@@ -26,6 +27,8 @@ export default defineConfig({
         ...Object.keys(pkg.dependencies ?? {}),
         ...Object.keys(pkg.peerDependencies ?? {}),
       ]),
+      // @ts-expect-error plugin types are not right
+      plugins: [preserveDirectives()],
       output: {
         preserveModules: true,
       },
